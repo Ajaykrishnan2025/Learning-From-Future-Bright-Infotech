@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+  color: orange;
+}
+h2 {
+  text-align: center;
+  color: red;
+}
+thead {
+  background-color: orangered;
+}
+table {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0px;
+}
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  height: 40px;
+  text-align: center;
+  width: 300px;
+}
+tr:hover {
+  background-color: rgb(255, 0, 183);
+}
+tbody tr:nth-child(even) {
+  background-color: rgb(250, 198, 27);
+}
+body {
+  background-color: rgb(227, 233, 241);
+  margin: 90px;
+}

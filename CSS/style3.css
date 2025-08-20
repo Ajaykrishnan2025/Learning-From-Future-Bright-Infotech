@@ -1,0 +1,59 @@
+.head {
+  text-align: center;
+  color: palevioletred;
+}
+
+button {
+  padding: 20px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  border: red;
+  font-size: medium;
+  background: linear-gradient(to right, Blue, pink);
+}
+.btn {
+  float: left;
+  padding: 30px;
+  width: 100px;
+  margin-left: 50px;
+}
+.box {
+  margin-left: 355px;
+}
+.bt {
+  float: left;
+  padding: 30px;
+  width: 90px;
+  margin-left: 50px;
+}
+.bu {
+  float: left;
+  padding: 30px;
+  width: 100px;
+  margin-left: 50px;
+}
+.blue {
+  background: linear-gradient(to right, yellow, green, yellow);
+  width: 150px;
+  padding: 20%;
+}
+.sun {
+  background: linear-gradient(to right, #fa812f, rgb(244, 90, 2));
+}
+.btn:hover {
+  transform: scale(1.5);
+  box-shadow: 5px;
+}
+.bt:hover {
+  transform: scale(1.5);
+  box-shadow: 5px;
+}
+.bu:hover {
+  transform: scale(1.5);
+  box-shadow: 6px;
+}
+body {
+  background-color: rgb(226, 208, 226);
+}

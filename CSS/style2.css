@@ -1,0 +1,18 @@
+.head {
+  text-align: center;
+  color: red;
+}
+.icons {
+  text-align: center;
+  font-size: x-large;
+  float: left;
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+  margin-left: 100px;
+}
+
+.icons:hover {
+  transform: scale(1.5);
+  color: greenyellow;
+}

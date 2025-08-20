@@ -1,0 +1,8 @@
+/* intinsic property using width */
+div {
+  width: fit-content;
+  height: 30px;
+  background-color: rgb(123, 207, 207);
+  border-radius: 10px;
+  padding: 0px;
+}

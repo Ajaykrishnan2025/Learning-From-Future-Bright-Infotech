@@ -1,0 +1,32 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #eef1f5;
+  padding: 50px;
+}
+.profile-card {
+  display: flex;
+
+  border: 1px solid rgb(255, 255, 255);
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 900px;
+  height: 200px;
+  box-shadow: 0 1px 3px;
+}
+.avatar {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(24, 200, 235);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.info {
+  margin-left: 40px;
+}
+.btn-edit {
+  padding: 5px;
+  background-color: rgb(92, 13, 134);
+  color: white;
+  border-radius: 5px;
+}

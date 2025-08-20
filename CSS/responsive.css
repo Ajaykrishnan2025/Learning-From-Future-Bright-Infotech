@@ -1,0 +1,21 @@
+.design {
+  text-align: center;
+  background-color: green;
+  color: white;
+  padding: 70px;
+  border-radius: 10px;
+  font-weight: bold;
+  height: 100px;
+}
+/* max-width using mobile view font size */
+@media screen and (max-width: 600px) {
+  .design {
+    font-size: 1.5vh;
+  }
+}
+/* min-width using desktop view font size */
+@media screen and (min-width: 768px) {
+  .design {
+    font-size: 1rem;
+  }
+}

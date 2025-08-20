@@ -1,0 +1,22 @@
+nav {
+  background-color: black;
+  color: white;
+  height: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: larger;
+}
+.important {
+  color: red;
+}
+/* using ittalic font */
+.tittle {
+  font-style: italic;
+}
+/* curesor change on nav menu font color */
+a:hover {
+  color: rgb(50, 170, 174);
+}

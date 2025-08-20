@@ -1,0 +1,48 @@
+.hea {
+  text-align: center;
+  color: purple;
+  animation: animation 2s ease;
+}
+
+@keyframes animation {
+  top {
+    top: 105px;
+  }
+  100% {
+    transform: translatey(30px);
+    opacity: 1;
+  }
+}
+.diwa {
+  float: left;
+  text-align: center;
+  margin-left: 610px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.new {
+  float: left;
+  margin-left: 30px;
+  text-align: center;
+}
+.holi {
+  float: left;
+  margin-left: 30px;
+  text-align: center;
+}
+.para {
+  font-size: 50px;
+  transition: 1.04s ease-in-out;
+  animation: rotate 1.04s infinite;
+}
+
+.con {
+  color: purple;
+}

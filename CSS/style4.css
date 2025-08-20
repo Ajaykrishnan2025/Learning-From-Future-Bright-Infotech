@@ -1,0 +1,65 @@
+.rotate {
+  width: 100px;
+  margin: 10px 0 0 460px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  float: left;
+}
+.icon {
+  text-align: center;
+  font-size: x-large;
+}
+.root {
+  text-align: center;
+  color: aliceblue;
+}
+.rotate:hover {
+  transform: rotate(90deg);
+}
+.scale {
+  width: 100px;
+  margin: 10px 0 0 30px;
+  padding: 50px;
+  border: 1px solid black;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  float: left;
+  transform: scale(1);
+}
+
+.translate {
+  width: 100px;
+  margin: 10px 0 0 30px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  float: left;
+}
+.skew {
+  width: 100px;
+  margin: 10px 0 0 30px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: yellowgreen;
+  border-radius: 10px;
+  float: left;
+}
+.scale:hover {
+  transform: scale(0.3);
+  transition: transform 0.5s;
+}
+.head {
+  text-align: center;
+  color: red;
+}
+.skew:hover {
+  transform: scale(1.5);
+  transform: skewx(35deg);
+}
+.translate:hover {
+  transform: translate(50px);
+  transition: transform 0.1s;
+}
