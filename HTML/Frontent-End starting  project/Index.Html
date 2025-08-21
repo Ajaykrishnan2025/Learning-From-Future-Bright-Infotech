@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title & Favicon -->
+    <title>Future Bright Infotech</title>
+    <link rel="icon" href="images[2].jpg">
+
+    <style>
+        /* Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Header Section */
+        .container {
+            background-color: whitesmoke;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .title {
+            font-size: xx-large;
+            color: rgb(13, 13, 13);
+        }
+
+        .nav {
+            text-align: left;
+            padding: 15px;
+        }
+
+        .nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            padding: 10px;
+            color: rgb(1, 1, 14);
+            border-radius: 10px;
+        }
+
+        /* Hero Section */
+        .container2 {
+            background-color: rgb(248, 93, 127);
+            text-align: center;
+            padding: 85px;
+            margin: 65px;
+            border: 3px solid black;
+            border-radius: 10px;
+            width: 90%;
+        }
+
+        /* Services Section */
+        .wrapper {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            padding: 10px 20px;
+            background-color: #eee5e5;
+           
+        }
+
+        .card {
+            width: 250px;
+            overflow: hidden;       
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding:  10px 20px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+        }
+
+        .info {
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .info h1 {
+            font-size: 16px;
+            color: rgb(23, 221, 23);
+        }
+
+        .info p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: #16ee0e;
+            color: white;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Features Section */
+        .features {
+            text-align: left;
+        }
+
+        .head {
+            text-align: center;
+        }
+
+        /* Footer Section */
+        .foot {
+            background-color: rgb(30, 29, 29);
+            padding: 50px;
+            margin: 50px;
+            border-radius: 10px;
+            color: antiquewhite;
+        }
+
+        .ftr {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: #0be921;
+            color: white;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .feature{
+            text-align: right;
+        }
+        .para{
+            color: white;
+        }
+        .change{
+            text-align: justify;
+        }
+        marquee{
+            color: rgb(229, 211, 222);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="container">
+        <nav class="nav">
+            <span class="title">Future Bright Infotech</span>
+            <a href="#">Home</a>
+            <a href="About.html">About</a>
+            <a href="Courses.html">Courses</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+       
+    </div>
+
+    <!-- Hero Section -->
+    <section class="container2">
+        <h1>Welcome to Future Bright Infotech</h1> <br>
+        <p class="para">Your trusted partner for education, programming training, and professional services.</p>  <br>
+        <marquee behavior="scroll" direction="right" loop="1">
+            Future Bright Infotech 👨‍🎓
+        </marquee>
+    </section>
+
+    <!-- Services Section -->
+    <div class="wrapper">
+        <h2>Our Services</h2>
+        <div class="card">
+            <img src="Programming_Courses.avif" alt="Programming Courses">
+            <div class="info">
+                <h1>Programming Courses</h1>
+                <p class="change">We offer training in React, Node.js, Python, JavaScript, Machine Learning, and Full Stack Development.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Learn-German-Language-Complete-German-Course.jpg" alt="German Language Courses">
+            <div class="info">
+                <h1>German Language Courses</h1>
+                <p class="change">Designed for students and professionals seeking fluency in German for education, work, or travel.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="Visa-Services-1.webp" alt="Visa Assistance">
+            <div class="info">
+                <h1>Visa Assistance</h1>
+                <p class="change">Helping students and professionals with fast and accurate visa processing.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2 class="head">Why Choose Us?</h2>
+        <p>✔ Experienced and certified trainers</p> <br>
+        <p>✔ Both offline and online learning options</p> <br>
+        <p>✔ Hands-on training with real-world projects</p> <br>
+    </section>
+
+    <!--Feature section-->
+
+    <section class="feature">
+        <p>✔ Comprehensive course material and resources</p> <br>
+        <p>✔ Fast and accurate visa assistance services</p> <br>
+        <p>✔ Personalized attention to each student's needs</p> <br>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="foot">
+            Whether you're interested in learning programming, mastering a new language, or getting help with visa processing, Future Bright Infotech has got you covered.
+            <br><br>
+            <button class="ftr">Get Started Today</button>
+        </p>
+    </footer>
+</body>
+</html>
