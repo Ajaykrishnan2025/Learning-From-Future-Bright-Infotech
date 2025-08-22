@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Flex wrapper to push footer down */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.img-nav h1 {
+  font-size: 1.7rem;
+}
+
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: white;
+  color: #000;
+  opacity: 0.85;
+  height: 90px;
+  z-index: 1000;
+  padding: 30px;
+  font-size: 1.3rem;
+}
+
+.list-items {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.list-items a {
+  text-decoration: none;
+  color: black;
+}
+
+.list-items a:hover {
+  border-bottom: 2px solid black;
+}
+.extra-list{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-right: 2rem;
+}
+.extra-list a{
+  text-decoration: none;
+  color: #000;
+}
+.extra-list a:hover {
+  border-bottom: 2px solid black;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.svg-icon {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.img-svg {
+  width: 20px;
+  border-radius: 5px;
+}
+
+.rights p {
+  font-size: 14px;
+  margin: 0;
+}
+
+
+/* Existing styles remain unchanged above... */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+  .img-nav h1 {
+    font-size: 1.4rem;
+  }
+
+  .navbar {
+    padding: 20px;
+    font-size: 1.1rem;
+  }
+
+  .extra-list {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list-items,
+  .extra-list {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    display: none;
+  }
+
+  .list-items.active,
+  .extra-list.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .img-nav h1 {
+    font-size: 1.2rem;
+  }
+
+  .navbar {
+    height: auto;
+    padding: 15px;
+  }
+
+  .svg-icon {
+    gap: 20px;
+  }
+
+  .img-svg {
+    width: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-nav h1 {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .img-svg {
+    width: 16px;
+  }
+
+  .rights p {
+    font-size: 12px;
+  }
+
+  .svg-icon {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+

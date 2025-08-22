@@ -1,0 +1,28 @@
+<header>
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <div class="img-nav">
+        <div>
+          <img src="logo.jpg" alt="" width="40" />
+        </div>
+
+        <div class="nav-head">
+          <h1>FutureBright Infotech</h1>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <ul class="list-items" id="nav-links">
+          <li><a href="{% url "blog:index" %}">Home</a></li>
+          <li><a href="{% url "blog:service" %}">Services</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="{% url "blog:contact" %}">Contact Us</a></li>
+          <li><a href="{% url "blog:logout" %}">Logout</a></li>
+          {% comment %} <li><a href="{% url "blog:register" %}">register</a></li>
+          <li><a href="{% url "blog:login" %}">Login</a></li> {% endcomment %}
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

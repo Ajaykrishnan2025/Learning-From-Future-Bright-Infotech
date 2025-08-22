@@ -1,0 +1,115 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Future Bright Infotect</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'blog/style2.css' %} ">
+    <link rel="icon" href="{% static 'blog/images/download.png' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container container">
+          <div class="img-nav">
+            <div>
+              <img src="logo.jpg" alt="" width="40" />
+            </div>
+
+            <div class="nav-head">
+              <h1>FutureBright Infotech</h1>
+            </div>
+
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+          
+          <ul class="list-items" id="nav-links">
+            <li><a href="{% url "blog:index" %}">Home</a></li>
+            <li><a href="{% url "blog:service" %}">Services</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="{% url "blog:contact" %}">Contact Us</a></li>            
+          </ul>
+        </div>
+
+       
+          <ul class="extra-list">
+            <li><a href="{% url "blog:register" %}">register</a></li>
+            <li><a href="{% url "blog:login" %}">Login</a></li>
+          </ul>
+        
+        
+      </nav>
+    </header>
+
+
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-4">
+                <h3>Register</h3>
+                    <div class="">
+                       {% include "blog/includes/errors.html" %}
+                    </div> 
+                <div class="my-3">
+                    <form method="post">
+                        {% csrf_token %} 
+                        <div class="form-group">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" value="{{ form.username.value|default:'' }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" value="{{ form.email.value|default:'' }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm_password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm_password" name="password_confirm">
+                        </div>
+                        <div class="my-3 d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <footer class="footer">
+      <div class="svg-icon">
+        <a href=""><img src="{% static "blog/images/download.png" %}" alt="fb" class="img-svg" /></a>
+        <a href=""
+          ><img src="{% static "blog/images/download (2).png" %}" alt="insta" class="img-svg"
+        /></a>
+        <a href=""><img src="{% static "blog/images/download (1).png" %}" alt="wb" class="img-svg" /></a>
+        <a href=""
+          ><img src="{% static "blog/images/download (3).png" %}" alt="linkedin" class="img-svg"
+        /></a>
+      </div>
+      <div class="rights">
+        <p>Future Bright Infotech. All rights Reserved - 2022</p>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("active");
+      document.querySelector(".extra-list").classList.toggle("active");
+  }
+
+    </script>
+
+
+  </body>
