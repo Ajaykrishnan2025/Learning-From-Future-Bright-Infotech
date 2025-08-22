@@ -100,7 +100,7 @@ imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))
 };
 
 arrowRight.addEventListener("click", () => {
-  if (index < 3) {
+  if (index < 5) {
     index++;
     arrowRight.classList.remove("disabled");
   } else {
