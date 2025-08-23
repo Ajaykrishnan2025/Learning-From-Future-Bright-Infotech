@@ -35,17 +35,27 @@
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
           
           <ul class="list-items" id="nav-links">
-            <li><a href="{% url "blog:index" %}">Home</a></li>
-            <li><a href="{% url "blog:service" %}">Services</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="{% url "blog:contact" %}">Contact Us</a></li>            
+                <li><a href="{% url 'blog:index' %}">Home</a></li>
+                <li><a href="{% url 'blog:service' %}">Services</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="{% url 'blog:contact' %}">Contact Us</a></li>
+
+               
           </ul>
+
         </div>
 
        
           <ul class="extra-list">
-            <li><a href="{% url "blog:register" %}">register</a></li>
-            <li><a href="{% url "blog:login" %}">Login</a></li>
+              {% if user.is_authenticated %}
+                  <li class="ms-auto">Hello, {{ user.username }}!</li>  <!-- ✅ Display username -->
+                  <li><a href="{% url 'blog:logout' %}">Logout</a></li>
+                {% else %}
+                  <li><a href="{% url 'blog:login' %}">Login</a></li>
+                  <li><a href="{% url 'blog:register' %}">Register</a></li>
+              {% endif %}
+            {% comment %} <li><a href="{% url "blog:register" %}">register</a></li>
+            <li><a href="{% url "blog:login" %}">Login</a></li> {% endcomment %}
           </ul>
         
         
