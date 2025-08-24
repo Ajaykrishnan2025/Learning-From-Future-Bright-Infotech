@@ -4,10 +4,11 @@ from . import views
 app_name = 'blog'
 
 urlpatterns = [
-    path("", views.index, name="index"),
+    path("index/", views.index, name="index"),
+    path("about/", views.about, name="about"),
     # path("post/<str:slug>/", views.detail, name="detail"),
     path("service/", views.service, name="service"),
-    path("register/", views.register, name="register"),
+    path("", views.register, name="register"),
     path("contact", views.contact, name="contact"),
     path("login/", views.login, name="login"),
     path("logout/", views.logout, name="logout"),

@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  /* position: relative; */
+  height: 100%;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-items {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.list-items a {
+  text-decoration: none;
+  color: black;
+}
+
+.list-items a:hover {
+  border-bottom: 2px solid black;
+}
+
+.img-nav {
+  display: flex;
+
+  gap: 10px;
+}
+.img-nav h1 {
+  font-size: 1.7rem;
+}
+
+#nav-links {
+  display: flex;
+  gap: 15px;
+}
+.list-items a:hover {
+  border-bottom: 2px solid black;
+}
+.bg-image {
+  width: 50%;
+  position: absolute;
+  margin-bottom: 10px;
+  margin-top: 5%;
+  padding: 50px;
+  margin-left: 8%;
+}
+.innovate {
+  text-align: justify;
+  margin-left: 60%;
+  position: absolute;
+  margin-top: 10%;
+}
+.btn {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+  font-size: large;
+}
+.passion {
+  margin-top: 40%;
+  position: absolute;
+  text-align: center;
+  margin-left: 40%;
+}
+.passion2 {
+  margin-top: 90%;
+  position: absolute;
+  text-align: center;
+  margin-left: 40%;
+  font-size: larger;
+}
+.--card1 {
+  margin-top: 50%;
+  position: absolute;
+  width: 25%;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: small;
+  text-align: justify;
+  margin-left: 13%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: larger;
+}
+.--card2 {
+  margin-top: 50%;
+  position: absolute;
+  width: 25%;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: small;
+  text-align: justify;
+  margin-left: 65%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: large;
+}
+.--card3 {
+  margin-top: 50%;
+  position: absolute;
+  width: 25%;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: small;
+  text-align: justify;
+  margin-left: 40%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: large;
+}
+.btnn {
+  color: white;
+  background-color: #000;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: large;
+}
+.--card4 {
+  margin-top: 100%;
+  position: absolute;
+  width: 25%;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: small;
+  text-align: justify;
+  margin-left: 38%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: large;
+  text-align: left;
+}
+.--card5 {
+  margin-top: 100%;
+  position: absolute;
+  width: 25%;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: small;
+  text-align: justify;
+  margin-left: 13%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: large;
+  text-align: left;
+}
+.--card6 {
+  margin-top: 100%;
+  position: absolute;
+  width: 25%;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: small;
+  text-align: justify;
+  margin-left: 65%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: large;
+  text-align: left;
+}
+.--card7 {
+  margin-top: 140%;
+  position: absolute;
+  width: 20%;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: small;
+  text-align: justify;
+  margin-left: 15%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: large;
+  text-align: left;
+}
+.--card8 {
+  margin-top: 140%;
+  position: absolute;
+  width: 20%;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: small;
+  text-align: justify;
+  margin-left: 40%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: large;
+  text-align: left;
+}
+.--card9 {
+  margin-top: 140%;
+  position: absolute;
+  width: 20%;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: small;
+  text-align: justify;
+  margin-left: 65%;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: large;
+  text-align: left;
+}
+.border {
+  margin-top: 190%;
+  position: absolute;
+  border: solid 1px;
+  width: 40%;
+  margin-left: 180px;
+  padding: 10px;
+}
+.border-2 {
+  margin-top: 188%;
+  position: absolute;
+  border: solid 1px;
+  width: 35%;
+  margin-left: 55%;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.border-3 {
+  margin-top: 200%;
+  position: absolute;
+  border: solid 1px;
+  width: 40%;
+  margin-left: 180px;
+  padding: 10px;
+}
+.border-4 {
+  margin-top: 198%;
+  position: absolute;
+  border: solid 1px;
+  width: 35%;
+  margin-left: 55%;
+  padding: 10px;
+}
+.passion3 {
+  margin-top: 180%;
+  position: absolute;
+  text-align: center;
+  margin-left: 40%;
+  font-size: larger;
+}
+.footer {
+  background-color: black;
+  color: white;
+  height: 200px;
+  position: absolute;
+  margin-top: 210%;
+  width: 100%;
+}
+.svg-icon {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+}
+.rights {
+  text-align: center;
+}
+footer img {
+  width: 20px;
+  border-radius: 5px;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: white;
+  color: #000;
+  opacity: 0.95;
+  height: 90px;
+  z-index: 1000;
+  padding: 20px;
+  font-size: 1.3rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+/* =================== Responsive =================== */
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+
+  .bg-image {
+    width: 70%;
+    margin-left: 15%;
+    position: relative;
+  }
+
+  .innovate {
+    margin-left: 5%;
+    margin-top: 5%;
+    position: relative;
+    text-align: center;
+  }
+
+  .--card1, .--card2, .--card3,
+  .--card4, .--card5, .--card6,
+  .--card7, .--card8, .--card9 {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .passion, .passion2, .passion3 {
+    position: relative;
+    margin: 40px auto;
+  }
+
+  .border, .border-2, .border-3, .border-4 {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .footer {
+    position: relative;
+    margin-top: 50px;
+  }
+}
+
+
+#nav-links.show {
+  display: flex;
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #nav-links {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+
+  #nav-links.active {
+    display: flex; /* show menu when active */
+  }
+
+  .hamburger {
+    display: block; /* show hamburger icon */
+  }
+
+  .bg-image {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .innovate {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .btn, .btnn {
+    width: auto;
+  }
+
+  .--card1, .--card2, .--card3,
+  .--card4, .--card5, .--card6,
+  .--card7, .--card8, .--card9 {
+    width: 95%;
+    margin: 15px auto;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* For very small mobile (like 480px) */
+@media (max-width: 480px) {
+  .img-nav h1 {
+    font-size: 1.2rem;
+  }
+
+  .list-items {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .svg-icon {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  footer img {
+    width: 16px;
+  }
+}
+
+

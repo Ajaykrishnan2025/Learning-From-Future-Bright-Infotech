@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*,
-*::after,
-*::before {
+/* Reset and base styles */
+*, *::after, *::before {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -13,14 +12,15 @@ html, body {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-}
-
-/* Flex wrapper to push footer down */
-body {
   display: flex;
   flex-direction: column;
 }
 
+body {
+  flex: 1;
+}
+
+/* Wrapper to push footer down */
 .wrapper {
   flex: 1;
 }
@@ -87,16 +87,20 @@ body {
 .list-items a:hover {
   border-bottom: 2px solid black;
 }
-.extra-list{
+
+.extra-list {
   list-style: none;
   display: flex;
   gap: 15px;
   margin-right: 2rem;
+  
 }
-.extra-list a{
+
+.extra-list a {
   text-decoration: none;
   color: #000;
 }
+
 .extra-list a:hover {
   border-bottom: 2px solid black;
 }
@@ -108,6 +112,8 @@ body {
   padding: 20px 0;
   width: 100%;
   text-align: center;
+  margin-top: auto;
+  
 }
 
 .svg-icon {
@@ -115,10 +121,12 @@ body {
   gap: 40px;
   justify-content: center;
   padding-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 .img-svg {
   width: 20px;
+  height: 20px;
   border-radius: 5px;
 }
 
@@ -128,23 +136,19 @@ body {
 }
 
 
-/* Existing styles remain unchanged above... */
-
-/* Media Queries for Responsiveness */
-@media (max-width: 992px) {
-  .img-nav h1 {
-    font-size: 1.4rem;
-  }
-
-  .navbar {
-    padding: 20px;
-    font-size: 1.1rem;
-  }
-
-  .extra-list {
-    margin-right: 1rem;
-  }
+.list-items {
+  display: flex;
+  gap: 20px;
 }
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
 
 @media (max-width: 768px) {
   .navbar-container {
@@ -152,7 +156,6 @@ body {
     align-items: flex-start;
   }
 
-  .list-items,
   .extra-list {
     flex-direction: column;
     gap: 10px;
@@ -160,7 +163,6 @@ body {
     display: none;
   }
 
-  .list-items.active,
   .extra-list.active {
     display: flex;
   }
@@ -184,8 +186,29 @@ body {
 
   .img-svg {
     width: 18px;
+    height: 18px;
+  }
+
+  .rights p {
+    font-size: 13px;
+  }
+   .list-items {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 10px;
+  }
+
+  .list-items.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
   }
 }
+
 
 @media (max-width: 576px) {
   .img-nav h1 {
@@ -199,6 +222,7 @@ body {
 
   .img-svg {
     width: 16px;
+    height: 16px;
   }
 
   .rights p {
@@ -206,8 +230,6 @@ body {
   }
 
   .svg-icon {
-    flex-wrap: wrap;
     gap: 15px;
   }
 }
-

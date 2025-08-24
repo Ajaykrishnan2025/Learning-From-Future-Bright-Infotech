@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path("blog/", include("blog.urls")),  # Only one 'blog/' prefix here
+    path("", include("blog.urls")),  # Only one 'blog/' prefix here
     path("admin/", admin.site.urls),
 ]

@@ -1,0 +1,201 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href=" {% static 'blog/about_style.css'%}" />
+    <link rel="icon" href="{% static 'blog/images/future_edited.jpeg' %}" />
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <div class="img-nav">
+            <div>
+                <img src="{% static 'blog/images/future_edited.jpeg' %}" alt="" width="40">
+            </div>
+            
+            <div class="nav-head">
+                <h1 >FutureBright Infotech</h1>
+            </div>
+
+
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+
+            </div>
+            <ul class="list-items" id="nav-links">
+                <li><a href="{% url 'blog:index' %}">Home</a></li>
+                <li><a href="{% url 'blog:service' %}">Services</a></li>
+                <li><a href="{% url 'blog:about' %}">About us</a></li>
+                <li><a href="{% url 'blog:contact' %}">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="header">
+            <h2>Innovative Web Solutions</h2>
+            <div class="para">
+                <p>Transforming Your Digital Presence</p>
+            </div>
+        </div>
+        <div class="head-content">
+            <div>
+                <img src="{% static 'blog/images/web design.jpeg' %}" alt="Image" class="image">
+            </div>
+            <div class="body-content">
+                <div>
+                    <h3>Custom Websites Design</h3>
+                    <p class="{% static 'blog/images/main-paragraph' %}">Our teams crafts unique Websites designs tailored to your brands identity we provides uesr experience and funtionality to ensure your websites is not only visually approaching but also easy to navgate with a focus on you specific needs. wwe deliver designs that engage and convert visitors efficitively. </p>
+                </div>
+    
+            </div>
+        </div>
+        <div class="head-content">
+            <div>
+                <img src="{% static 'blog/images/system screen.jpg' %}" alt="Image" class="image">
+            </div>
+            <div class="body-content">
+                <div>
+                    <h3>Responsive Development</h3>
+                    <p class="main-paragraph">In todays mobile-centric world.responsive is key.Our websites are developed to adapt seamessly across devices. ensuring a consistent experience for all users.whether they're on a desktop,tablet or samrtphone.this approach enhances accessibility and boosts your site's performance. </p>
+                </div>
+    
+            </div>
+        </div>
+        <div class="head-content">
+            <div>
+                <img src="{% static 'blog/images/project place.jpg' %}" alt="Image" class="image">
+            </div>
+            <div class="body-content">
+                <div>
+                    <h3>Scalable Solutions</h3>
+                    <p class="main-paragraph">As your business grows,your websites should grow with it.we build scalable solutions that can accommodate increased traffic and funtionality without compromising performance.Our architecture is designed to evolue allowing you to expand your online effortlessly.</p>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <div class="content2">
+        <div class="header-two">
+            <h2>Connecting Talent with Opportunity</h2>
+            <div class="paragraph">
+                <p>Your Carerr Starts Here</p>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="main-content2">
+                <img src="{% static 'blog/images/person photo.jpg' %}" alt="image" class="image2">
+            </div>
+           
+                <div class="para-content2">
+                    <h3>Personalized Job Matchimg</h3>
+                    <p class="main-paragraph">We understand that every candidate is unique which is why we offer Personalized job matching services ,Our expert team works closely with you to understand your skills aspirations,and preferences ensuring that we connect you with job opportunities that align with your career goats</p>
+                </div>
+
+        </div>
+        <div class="main-container2">
+            <div>
+                <img src="{% static 'blog/images/working.jpg' %}" alt="image" class="image3">
+            </div>
+            <div class="para-content3">
+                <div>
+                    <h3>Extensive Industry Network</h3>
+                    <p class="main-paragraph2">Leverage our extensive network of employers across various industries,including international opportunities.our established relationship with companies enables us to offer you trusted placements,giving you access to job opening that may not be advertised publicly.We bring you closer to your dream job.</p>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="main-container">
+            <div class="main-content2">
+                <img src="{% static 'blog/images/employee.jpg' %}" alt="image" class="image2">
+            </div>
+           
+                <div class="para-content2">
+                    <h3>Ongoing Support</h3>
+                    <p class="main-paragraph">Our commitment to your success doesn't end with placement.we provide ongoing support to help you navigate your new role and ensure a smooth trasition into the workplace.From interview prepartion to resume writing.we are here to support you every step of the way.</p>
+                </div>
+
+        </div>
+        
+    
+        
+    </div>
+    <div class="content3">
+        <div class="header-two">
+            <h2>Expert-Led progrmming Courses</h2>
+            <p class="paragraph">Empowering You with skills</p>
+        </div>
+        <div>
+            <div class="main-container">
+                <div class="main-content2">
+                    <img src="{% static 'blog/images/code.jpg' %}" alt="image" class="image2">
+                </div>
+               
+                    <div class="para-content2">
+                        <h3>Comprehensive criculum</h3>
+                        <p class="main-paragraph3">Our programming courses are designed to cover a wide range of topices relevent to today's job market.From basic coding principles to advanced software development techniques.Our curriculum is comprehensive.ensuring you gain the skills needed to excel in the tech industry Each course is structured for optional learning.</p>
+                    </div>
+    
+            </div>
+            
+        
+        </div>
+        <div class="main-container2">
+            <div>
+                <img src="{% static 'blog/images/working.jpg' %}" alt="image" class="image3">
+            </div>
+            <div class="para-content3">
+                <div>
+                    <h3>Certificate Upon Completion</h3>
+                    <p class="main-paragraph2">Upon completion of our courses.you will receive a certification that validates yours skill and enhances your employability.this certification is recognized by industry leaders and can significantly boost your resume. making you stand out in a compatitive job market.</p>
+                </div>
+    
+            </div>
+            
+        </div>
+        <div class="main-container">
+            <div class="main-content2">
+                <img src="{% static 'blog/images/person photo.jpg' %}" alt="image" class="image2">
+            </div>
+           
+                <div class="para-content2">
+                    <h3>Carrer Support Services</h3>
+                    <p class="main-paragraph">We provide extensive career support services including resumes reviews.interview coaching.and job placement assitance.Our goat is to ensure that you don't just learn but also successfully transition into a fulfilling career.partner with us for a brighter furture.</p>
+                </div>
+
+        </div>
+       
+    </div>
+
+
+    <footer class="footer">
+      <div class="svg-icon">
+        <a href=""><img src="{% static "blog/images/linkedin.png" %}" alt="fb" class="img-svg" /></a>
+        <a href=""
+          ><img src="{% static "blog/images/facebook.png" %}" alt="insta" class="img-svg"
+        /></a>
+        <a href=""><img src="{% static "blog/images/whatsapp.png" %}" alt="wb" class="img-svg" /></a>
+        <a href=""
+          ><img src="{% static "blog/images/instagram.png" %}" alt="linkedin" class="img-svg"
+        /></a>
+      </div>
+      <div class="rights">
+        <p>Future Bright Infotech. All rights Reserved - 2022</p>
+      </div>
+    </footer>
+    
+
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("show");
+      }
+    </script>
+</body>
+</html>
