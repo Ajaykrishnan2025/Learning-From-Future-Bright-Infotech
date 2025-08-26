@@ -1,207 +1,380 @@
-{% extends "blog/base.html" %} {% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Bright Infotech</title>
+    <link rel="stylesheet" href="{% static 'blog/index_style.css'%}">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <link rel="icon" href="{% static 'blog/images/future_edited.jpeg' %}" />
 
-<div class="abt">
-  <div class="bg-image">
-    <img src="logo.jpg" alt="" width="100%" />
+</head>
+<body>
+
+     <!-- navbar -->
+    <header>
+    <nav class="navbar">
+  <div class="navbar-container container">
+    <div class="img-nav">
+      <img src="./top.webp" alt="" width="40" />
+      <h1>FutureBright Infotech</h1>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <!-- Navigation Links -->
+    <ul class="list-items" id="nav-links">
+      <li><a href="{% url 'blog:index' %}">Home</a></li>
+      <li><a href="{% url 'blog:service' %}">Services</a></li>
+      <li><a href="{% url 'blog:about' %}">About us</a></li>
+      <li><a href="{% url 'blog:contact' %}">Contact Us</a></li>
+    </ul>
   </div>
-  <div class="innovate">
-    <h2>Empoverment Through Inovations</h2>
-    <br />
-    <p>
-      We believe in harnessing the power of <br />
-      technology and creativity tot unlock potential.Our <br />
-      inovation soloution are designed to meet the <br />
-      evoloving needs of our clients.ensuring that <br />
-      achive aspirations and realize their dreams
-    </p>
-    <br />
-    <button class="btn"><a href="#"></a>Learn More</button>
-  </div>
+</nav>
+    </header>
 
-  <div class="passion">
-    <h1>Our Passinate professionals</h1>
-    <br />
-    <h4>Drive by Excellence</h4>
-  </div>
+ <!-- showcase-area -->
+ <section class="showcase-area"> 
+    
+        <div class="showcase-container" >
+            <p>Empowering your journey to success through innovation, training, and tailored career solutions.</p>
+            <h1 class="main-title" id="home">Welcome to Future Bright Infotech</h1>
+            <div>
+            <button class="btn"><a href="#">Contact Us</a></button>
+            </div>
+         </div>
+         
+         
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
 
-  <div class="card">
-    <div class="--card1">
-      <img src="eninner.jpeg" alt="" width="100%" />
-      <h4>Experienced Developers</h4>
-      <br />
-      <p>
-        Our web developer team consists of skilled professionals who are adept a
-        creating custom solutions tailored to your specific needs. Their
-        dedications ensures that every projects is a success
-      </p>
-      <br />
-      <button class="btnn"><a href="#"></a>Meet the Team</button>
-    </div>
+       <div class="container-slide one">
+        <div class="img-slide"> 
+        <img src="{% static 'blog/images/program.jpg' %}" alt="" class="image-slide">    
+        </div>
+            <div class="content-slide">
+                <div class="head-slide">
+                    <h1>Innovative Website Development</h1>
+                </div>
+                <div class="content-slide2">
+                    <p class="">We create custom, responsive websites that not only look great but are built with the
+                         latest technologies to provide exceptional user experiences. Our team works closely with
+                          you to understand your needs and deliver a product that stands out.</p>
+                </div>
+                <div><button class="btn"><a href="#">Learn More</a></button></div>
+            </div>
+            </div>
+        </div>
 
-    <div class="--card2">
-      <img src="trainer.jpg" alt="" width="100%" />
-      <h4>Certified Trainers</h4>
-      <br />
-      <p>
-        our trainers are industry experts with years of experience.They are
-        committed to providing the highest quality training programs that equip
-        you with essential skills for today's job market
-      </p>
-      <br />
-      <button class="btnn">View Trainers</button>
-    </div>
-    <div class="--card3">
-      <img src="carrer.jpg" alt="" width="100%" />
-      <h4>Careear Advisors</h4>
-      <br />
-      <p>
-        Our careear advisor are dedicated to helping you navigate your career
-        path.With personilized guidance are support.We ensure that you are
-        well-prepared for your job search and placement.
-      </p>
-      <br />
-      <button class="btnn"><a href="#"></a>Geet Advice</button>
-    </div>
-    <div class="passion2">
-      <h2>Our Journey So Far</h2>
-      <br />
-      <p style="font-size: small">A leagacy of Empoweement</p>
-      <p></p>
-    </div>
 
-    <div class="--card4">
-      <img src="carrer.jpg" alt="" width="110%" />
-      <p>
-        <strong>Job Fair Success: Connecting Candidates with Employers</strong>
-      </p>
-      <br />
-      <address>
-        <p>July 4, 2025 Latest News</p>
-      </address>
-      <br />
-      <p>
-        Our recent job fair was a tremensous sucess.Connecting hundreds of
-        candidates with esteemed...<a href="#">readmore</a>
-      </p>
-    </div>
 
-    <div class="--card5">
-      <img src="image.png" alt="" width="110%" />
-      <p><strong>New Course Launch:Advanced Python Programming</strong></p>
-      <br />
-      <address>
-        <p>July 4, 2025 Latest News</p>
-      </address>
-      <br />
-      <p>
-        We're exicited yo announce our new Advanced python programming
-        course.designed for individuals....<a href="#">readmore</a>
-      </p>
-    </div>
-    <div class="--card6">
-      <img
-        src="Learn-German-Language-Complete-German-Course.jpg"
-        alt=""
-        width="110%"
-      />
-      <p><strong>German launguage Training: Enroll Now</strong></p>
-      <br />
-      <address>
-        <p>July 4, 2025 Latest News</p>
-      </address>
-      <br />
-      <p>
-        Our German Language Training programming is now open for enrollemnt!
-        Offering levels A1 to B2 these..<a href="#">readmore</a>
-      </p>
-    </div>
 
-    <div class="--card7">
-      <img src="contuniue to growth.webp" alt="" width="130%" />
-      <p><strong>Continued Growth</strong></p>
-      <br />
-      <address>
-        <p>July 4, 2025 Company History</p>
-      </address>
-      <br />
-      <p>
-        Today Future Bright Infotrch is recoginzed for its innovative approach
-        and commitment to quality...<a href="#">readmore</a>
-      </p>
-    </div>
+      <div class="swiper-slide">
+        <div class="container-slide two">
+        <div class="img-slide"> 
+        <img src="{% static 'blog/images/program.jpg' %}" alt="" class="image-slide">    
+        </div>
+            <div class="content-slide">
+                <div class="head-slide">
+                    <h1>Comprehensive Job Placement </h1>
+                </div>
+                <div class="content-slide2">
+                    <p class="">Our job placement services are designed to connect freshers and experienced professionals
+                         with trusted employers across various industries, 
+                        including opportunities abroad. We understand the job market and help you find the perfect match.</p>
+                </div>
+                <div><button class="btn btn2"><a href="#">Explore Opportunities</a></button></div>
+            </div>
+            </div>
+        </div>
 
-    <div class="--card8">
-      <img src="logo.jpg" alt="" width="130%" />
-      <p><strong>Founder Year</strong></p>
-      <br />
-      <address>
-        <p>July 4, 2025 Company History</p>
-      </address>
-      <br />
-      <p>
-        Founder in 2025, Future Bright Infotech began as a small web development
-        agency.Over the years...<a href="#">readmore</a>
-      </p>
-    </div>
 
-    <div class="--card9">
-      <img src="achivements.webp" alt="" width="130%" />
-      <p><strong>Milestone Achievements</strong></p>
-      <br />
-      <address>
-        <p>July 4, 2025 Company History</p>
-      </address>
-      <br />
-      <p>
-        In 2028, we launched our first certifications program, paving the way
-        for numerous sucessful....<a href="#">readmore</a>
-      </p>
+      <div class="swiper-slide">
+         <div class="container-slide three">
+        <div class="img-slide"> 
+        <img src="{% static 'blog/images/program.jpg' %}" alt="" class="image-slide" >    
+        </div>
+            <div class="content-slide">
+                <div class="head-slide">
+                    <h1>Expert Programming Courses</h1>
+                </div>
+                <div class="content-slide2">
+                    <p>Our industry-relevant programming courses equip you with
+                         the skills needed to thrive in the tech world. With certification and career support,
+                          we ensure you are job-ready and confident in your abilities.</p>
+                </div>
+                <div><button class="btn btn3"><a href="#">Join a Course</a></button></div>
+            </div>
+            </div>
+      </div>
+      
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
   </div>
 
-  <div class="passion3">
-    <h2>Your Sucess, Our Commitment</h2>
-    <p>Empower your Future</p>
-  </div>
-  <br />
+  <section>
 
-  <div class="border">
-    <p><b>Tailored Solutions</b></p>
-    <br />
-    <p>
-      We understand that every individuals has unique goals.Our programs are
-      tailored to meet you specific needs. ensuring you receive the support
-      necessay to excel
-    </p>
-  </div>
-  <br />
-  <div class="border-2">
-    <p><b>Industry-Relevant Training</b></p>
-    <br />
-    <p>
-      Our training cources are designed with input form industry experts,
-      ensuring you gain the skills that are in demand in today's job market.
-    </p>
-  </div>
-  <br />
-  <div class="border-3">
-    <p><b>Job Placement Support</b></p>
-    <br />
-    <p>
-      With a networks of trusted employers and extensive job placement
-      services.we are committed to helping you secure a position that aligns
-      with your career aspiration
-    </p>
-  </div>
-  <br />
-  <div class="border-4">
-    <p><b>Launguage Trainig Opportunities</b></p>
-    <br />
-    <p>
-      Our German Language programs and not only improve linguistic skilld but
-      also open doors to job opportunities in European countries
-    </p>
-  </div>
-</div>
+    <div class="service">
+      <h2>Our Key Services</h2>
+      </div>
+      <div class="service-sub">
+      <p>Tailored solution designed to meet your unique needs.</p>
+    </div>
 
-{% endblock%}
+    <div class="service-container">
+      <div class="img-service">
+        <img src="{% static 'blog/images/top.webp' %}" alt="" class="image-service">
+      </div>
+      <div class="service-sub-container">
+      <div class="service-head">
+          <h3>Website Development</h3>
+      </div>
+
+      <div class="service-content">
+        <p>Our website development services focus on creating custom, responsive, and scalable websites that enhance your online presence. We incorporate modern technologies and best practices to ensure your 
+          site is user-friendly and effective in driving results.</p>
+          <button class="btn"><a href="">View Details</a></button>
+      </div>
+      </div>
+    </div>
+
+    <div class="service-container">
+      <div class="img-service">
+        <img src="{% static 'blog/images/key.webp' %}" alt="" class="image-service">
+      </div>
+      <div class="service-sub-container">
+      <div class="service-head">
+          <h3>Job Placement Services</h3>
+      </div>
+
+      <div class="service-content">
+        <p>We provide reliable job placement services for both fresh graduates and seasoned professionals. Our dedicated team works tirelessly to match candidates with suitable roles in various sectors, including international job opportunities,
+           ensuring a smooth transition into the workforce.</p>
+          <button class="btn"><a href="">Find Jobs</a></button>
+      </div>
+      </div>
+    </div>
+
+    <div class="service-container">
+      <div class="img-service">
+        <img src="{% static 'blog/images/top.webp' %}" alt="" class="image-service">
+      </div>
+      <div class="service-sub-container">
+      <div class="service-head">
+          <h3>Training & Certification</h3>
+      </div>
+
+      <div class="service-content">
+        <p>Our training programs cover a wide range of essential skills, including programming and language courses. With a focus on industry relevance, we provide hands-on training, certifications, 
+          and ongoing career support to help you excel in your chosen field.</p>
+          <button class="btn btn-training"><a href="">Start Learning</a></button>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="service-container">
+      <div class="img-service">
+        <img src="program.jpg" alt="" class="image-service">
+      </div>
+      <div class="service-sub-container">
+      <div class="service-head">
+          <h3>Website Development</h3>
+      </div>
+
+      <div class="service-content">
+        <p>Our website development services focus on creating custom, responsive, and scalable websites that enhance your online presence. We incorporate modern technologies and best practices to ensure your 
+          site is user-friendly and effective in driving results.</p>
+          <button class="btn"><a href="">View Details</a></button>
+      </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Stories -->
+  <section>
+    <div class="Success-stories-container">
+      <div class="success-head">
+        <h3>Success Stories</h3>
+      </div>
+      <div class="success-content">
+        <p>Real experiences from our clients and candidates.</p>
+      </div>
+      <div class="success-card-container">
+      <div class="success-card">
+        <div class="bg-card">
+          <div class="img-card">
+            <img src="{% static 'blog/images/program.jpg' %}" alt="web solution" class="image-card">
+          </div>
+          <div class="content-card">
+            <h4>Transformative Web Solutions</h4>
+            <p>Thanks to Future Bright Infotech, my business now has a stunning website that attracts more customers than ever before! The team was
+               professional and truly understood my vision.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="success-card">
+        <div class="bg-card">
+          <div class="img-card">
+            <img src="{% static 'blog/images/program.jpg' %}" alt="web solution" class="image-card">
+          </div>
+          <div class="content-card">
+            <h4>A New Career Path</h4>
+            <p>I landed my dream job after completing the job placement program. The support I received was exceptional, and I couldn't
+               have done it without their guidance and resources.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="success-card">
+        <div class="bg-card">
+          <div class="img-card">
+            <img src="{% static 'blog/images/program.jpg' %}" alt="web solution" class="image-card">
+          </div>
+          <div class="content-card">
+            <h4>Skills that Matter</h4>
+            <p>The programming course at Future Bright Infotech was a game-changer for me. I gained practical skills and confidence that 
+              helped me secure a position in a top tech company.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Updates -->
+  <section>
+
+    <div class="updates-container">
+      <div class="updates-head">
+        <h3>Latest Updates</h3>
+      </div>
+      <div class="updates-content">
+        <p>Keep in touch with our latest news and insights.</p>
+      </div>
+    </div>
+
+    <div class="latest-container">
+      <div class="main-content">
+          <div class="img-update">
+            <img src="{% static 'blog/images/OIP.jpg' %}" alt="jobfair" class="image-update">
+          </div>
+          <div class="update-contnet">
+            <h4>
+              Job Fair Success: Connecting Candiates with Employers
+            </h4>
+            <address>July 4, 2025</address>
+            <p>Our recent job fair was a tremendous success, connecting hundred of candiates with esteemed....
+              <a href="#" class="etc">Read more....</a>
+            </p>
+          </div>
+        </div>
+        <hr>
+
+         <div class="main-content">
+          <div class="img-update">
+            <img src="{% static 'blog/images/OIP.jpg' %}" alt="jobfair" class="image-update">
+          </div>
+          <div class="update-contnet">
+            <h4>
+              New Course Laung: Advanced Python Programming 
+            </h4>
+            <address>July 5, 2025</address>
+            <p>We're excited to announce our new Advanced Python Programming course, designed for individuals....
+              <a href="#" class="etc">Read more....</a>
+            </p>
+          </div>
+        </div>
+        <hr>
+
+         <div class="main-content">
+          <div class="img-update">
+            <img src="{% static 'blog/images/OIP.jpg' %}" alt="jobfair" class="image-update">
+          </div>
+          <div class="update-contnet">
+            <h4>
+              German Langauge Training: Enroll Now
+            </h4>
+            <address>July 10, 2025</address>
+            <p>Our German Language training program is now open for enrollment! offering levels A1 to B2, these....
+              <a href="#" class="etc">Read more....</a>
+            </p>
+          </div>
+        </div>
+        <hr>
+
+
+    </div>
+
+  </section>
+
+  <!-- footer -->
+  <footer class="footer ">
+
+    <div class="svg-icon">
+      
+      <a href=""><img src="{% static "blog/images/linkedin.png" %}" alt="fb" class="img-svg"></a>
+      <a href=""><img src="{% static "blog/images/facebook.png" %}" alt="insta" class="img-svg"></a>
+      <a href=""><img src="{% static "blog/images/whatsapp.png" %}" alt="wb" class="img-svg"></a>
+      <a href=""><img src="{% static "blog/images/instagram.png" %}" alt="linkedin" class="img-svg"></a>
+
+    </div>
+    <div class="rights">
+      <p>Future Bright Infotech. All rights Reserved - 2022</p>
+    </div>
+  </footer>
+       
+    
+
+
+
+ 
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    480:{
+      slidesPerView:1,
+    },
+    768: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 1,
+    },
+  },
+});
+
+    function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("show");
+  }
+  </script>
+</body>
+
+</html>
